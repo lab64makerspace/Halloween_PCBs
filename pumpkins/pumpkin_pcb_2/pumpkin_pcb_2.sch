@@ -2272,7 +2272,7 @@ U 1 1 615A2888
 P 3900 2500
 F 0 "SW1" H 3900 2785 50  0000 C CNN
 F 1 "SMT_SPDT" H 3900 2694 50  0000 C CNN
-F 2 "" H 3900 2500 50  0001 C CNN
+F 2 "Button_Switch_SMD:SMT_Mini_Slide_Switch" H 3900 2500 50  0001 C CNN
 F 3 "" H 3900 2500 50  0001 C CNN
 	1    3900 2500
 	1    0    0    -1  
@@ -2313,7 +2313,7 @@ U 1 1 615BF2C5
 P 2950 3350
 F 0 "BAT1" V 2897 3598 60  0000 L CNN
 F 1 "BH-125A-1" V 3003 3598 60  0000 L CNN
-F 2 "" H 3150 3550 60  0001 L CNN
+F 2 "Battery:BatteryHolder_AdamTech_BH-125A-1" H 3150 3550 60  0001 L CNN
 F 3 "https://app.adam-tech.com/products/download/data_sheet/197006/bh-125a-1-data-sheet.pdf" H 3150 3650 60  0001 L CNN
 F 4 "2057-BH-125A-1-ND" H 3150 3750 60  0001 L CNN "Digi-Key_PN"
 F 5 "BH-125A-1" H 3150 3850 60  0001 L CNN "MPN"
@@ -2421,4 +2421,7 @@ Connection ~ 4900 4000
 Wire Wire Line
 	4900 2400 5750 2400
 Connection ~ 4900 2400
+NoConn ~ 4100 2600
+Text Notes 4150 2630 0    50   ~ 0
+n/c
 $EndSCHEMATC
