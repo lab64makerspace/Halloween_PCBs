@@ -2272,7 +2272,7 @@ U 1 1 615A2888
 P 3900 2500
 F 0 "SW1" H 3900 2785 50  0000 C CNN
 F 1 "SMT_SPDT" H 3900 2694 50  0000 C CNN
-F 2 "" H 3900 2500 50  0001 C CNN
+F 2 "Button_Switch_SMD:SMT_Mini_Slide_Switch" H 3900 2500 50  0001 C CNN
 F 3 "" H 3900 2500 50  0001 C CNN
 	1    3900 2500
 	1    0    0    -1  
@@ -2283,7 +2283,7 @@ U 1 1 615A4F38
 P 4900 2850
 F 0 "R1" H 4968 2896 50  0000 L CNN
 F 1 "47 Ohms" H 4968 2805 50  0000 L CNN
-F 2 "" V 4940 2840 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4940 2840 50  0001 C CNN
 F 3 "~" H 4900 2850 50  0001 C CNN
 	1    4900 2850
 	1    0    0    -1  
@@ -2294,7 +2294,7 @@ U 1 1 615A807B
 P 4900 3400
 F 0 "D1" V 4939 3282 50  0000 R CNN
 F 1 "LED per Chart" V 4848 3282 50  0000 R CNN
-F 2 "" H 4900 3400 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4900 3400 50  0001 C CNN
 F 3 "~" H 4900 3400 50  0001 C CNN
 	1    4900 3400
 	0    -1   -1   0   
@@ -2313,7 +2313,7 @@ U 1 1 615BF2C5
 P 2950 3350
 F 0 "BAT1" V 2897 3598 60  0000 L CNN
 F 1 "BH-125A-1" V 3003 3598 60  0000 L CNN
-F 2 "" H 3150 3550 60  0001 L CNN
+F 2 "Battery:BatteryHolder_AdamTech_BH-125A-1" H 3150 3550 60  0001 L CNN
 F 3 "https://app.adam-tech.com/products/download/data_sheet/197006/bh-125a-1-data-sheet.pdf" H 3150 3650 60  0001 L CNN
 F 4 "2057-BH-125A-1-ND" H 3150 3750 60  0001 L CNN "Digi-Key_PN"
 F 5 "BH-125A-1" H 3150 3850 60  0001 L CNN "MPN"
@@ -2343,17 +2343,17 @@ Wire Wire Line
 	4100 2400 4900 2400
 Wire Wire Line
 	2950 4000 4050 4000
-Text Notes 1150 6550 0    138  Italic 28
+Text Notes 650  6550 0    138  Italic 28
 Bill of Materials
-Text Notes 1150 6750 0    59   ~ 0
+Text Notes 650  6750 0    59   ~ 0
 Ref            Description                                   Mfg                     Mfg P/N
-Text Notes 1150 7000 0    59   ~ 0
+Text Notes 650  7000 0    59   ~ 0
 BAT1          CR2032 Battery Holder                       ADAM TECH              BH-125A-1
-Text Notes 1150 7150 0    59   ~ 0
+Text Notes 650  7150 0    59   ~ 0
 SW1           Switch, SMT 8.7 x 3.0 mm Mini-Slide        Würth Elektronik        450405020524
-Text Notes 1150 7300 0    59   ~ 0
+Text Notes 650  7300 0    59   ~ 0
 R1, R2        Resistor, 47 Ohms ± 5%, 0.4W 0805         Rohm Semi             ESR10EZPJ470
-Text Notes 1150 7450 0    59   ~ 0
+Text Notes 650  7450 0    59   ~ 0
 D1, D2        LED, of your choosing                        BetLux                  BL-Lxxxxxx-B-S3
 $Comp
 L power:GND #PWR01
@@ -2385,7 +2385,7 @@ Wire Notes Line width 8 style solid
 	6300 1350 10100 1350
 Text Notes 1700 3500 0    79   Italic 16
   Holder for\nCR2032 Battery
-Text Notes 950  7750 0    59   ~ 0
+Text Notes 550  7750 0    59   ~ 0
 * Available from EvilMadScientist - https://shop.evilmadscientist.com/productsmenu/partsmenu/189-candled
 $Comp
 L Device:R_US R2
@@ -2393,7 +2393,7 @@ U 1 1 615A9D08
 P 5750 2850
 F 0 "R2" H 5818 2896 50  0000 L CNN
 F 1 "47 Ohms" H 5818 2805 50  0000 L CNN
-F 2 "" V 5790 2840 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5790 2840 50  0001 C CNN
 F 3 "~" H 5750 2850 50  0001 C CNN
 	1    5750 2850
 	1    0    0    -1  
@@ -2404,7 +2404,7 @@ U 1 1 615A9D12
 P 5750 3400
 F 0 "D2" V 5789 3282 50  0000 R CNN
 F 1 "LED per Chart" V 5698 3282 50  0000 R CNN
-F 2 "" H 5750 3400 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5750 3400 50  0001 C CNN
 F 3 "~" H 5750 3400 50  0001 C CNN
 	1    5750 3400
 	0    -1   -1   0   
@@ -2421,4 +2421,67 @@ Connection ~ 4900 4000
 Wire Wire Line
 	4900 2400 5750 2400
 Connection ~ 4900 2400
+$Comp
+L power:+BATT #PWR0101
+U 1 1 616CFDC6
+P 2950 2500
+F 0 "#PWR0101" H 2950 2350 50  0001 C CNN
+F 1 "+BATT" H 2965 2673 50  0000 C CNN
+F 2 "" H 2950 2500 50  0001 C CNN
+F 3 "" H 2950 2500 50  0001 C CNN
+	1    2950 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 2500
+NoConn ~ 4100 2600
+Text Notes 4130 2630 0    50   ~ 0
+n/c
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 616D1501
+P 5950 7000
+F 0 "#FLG0101" H 5950 7075 50  0001 C CNN
+F 1 "PWR_FLAG" H 5950 7173 50  0000 C CNN
+F 2 "" H 5950 7000 50  0001 C CNN
+F 3 "~" H 5950 7000 50  0001 C CNN
+	1    5950 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 616D203F
+P 5550 7050
+F 0 "#FLG0102" H 5550 7125 50  0001 C CNN
+F 1 "PWR_FLAG" H 5550 7223 50  0000 C CNN
+F 2 "" H 5550 7050 50  0001 C CNN
+F 3 "~" H 5550 7050 50  0001 C CNN
+	1    5550 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+BATT #PWR0102
+U 1 1 616D2410
+P 5550 7000
+F 0 "#PWR0102" H 5550 6850 50  0001 C CNN
+F 1 "+BATT" H 5565 7173 50  0000 C CNN
+F 2 "" H 5550 7000 50  0001 C CNN
+F 3 "" H 5550 7000 50  0001 C CNN
+	1    5550 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 7000 5550 7050
+$Comp
+L power:GND #PWR0103
+U 1 1 616D332A
+P 5950 7050
+F 0 "#PWR0103" H 5950 6800 50  0001 C CNN
+F 1 "GND" H 5955 6877 50  0000 C CNN
+F 2 "" H 5950 7050 50  0001 C CNN
+F 3 "" H 5950 7050 50  0001 C CNN
+	1    5950 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 7000 5950 7050
 $EndSCHEMATC
