@@ -2283,7 +2283,7 @@ U 1 1 615A4F38
 P 4900 2850
 F 0 "R1" H 4968 2896 50  0000 L CNN
 F 1 "47 Ohms" H 4968 2805 50  0000 L CNN
-F 2 "" V 4940 2840 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4940 2840 50  0001 C CNN
 F 3 "~" H 4900 2850 50  0001 C CNN
 	1    4900 2850
 	1    0    0    -1  
@@ -2294,7 +2294,7 @@ U 1 1 615A807B
 P 4900 3400
 F 0 "D1" V 4939 3282 50  0000 R CNN
 F 1 "LED per Chart" V 4848 3282 50  0000 R CNN
-F 2 "" H 4900 3400 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 4900 3400 50  0001 C CNN
 F 3 "~" H 4900 3400 50  0001 C CNN
 	1    4900 3400
 	0    -1   -1   0   
@@ -2343,17 +2343,17 @@ Wire Wire Line
 	4100 2400 4900 2400
 Wire Wire Line
 	2950 4000 4050 4000
-Text Notes 1150 6550 0    138  Italic 28
+Text Notes 700  6550 0    138  Italic 28
 Bill of Materials
-Text Notes 1150 6750 0    59   ~ 0
+Text Notes 700  6750 0    59   ~ 0
 Ref            Description                                   Mfg                     Mfg P/N
-Text Notes 1150 7000 0    59   ~ 0
+Text Notes 700  7000 0    59   ~ 0
 BAT1          CR2032 Battery Holder                       ADAM TECH              BH-125A-1
-Text Notes 1150 7150 0    59   ~ 0
+Text Notes 700  7150 0    59   ~ 0
 SW1           Switch, SMT 8.7 x 3.0 mm Mini-Slide        Würth Elektronik        450405020524
-Text Notes 1150 7300 0    59   ~ 0
+Text Notes 700  7300 0    59   ~ 0
 R1, R2        Resistor, 47 Ohms ± 5%, 0.4W 0805         Rohm Semi             ESR10EZPJ470
-Text Notes 1150 7450 0    59   ~ 0
+Text Notes 700  7450 0    59   ~ 0
 D1, D2        LED, of your choosing                        BetLux                  BL-Lxxxxxx-B-S3
 $Comp
 L power:GND #PWR01
@@ -2385,7 +2385,7 @@ Wire Notes Line width 8 style solid
 	6300 1350 10100 1350
 Text Notes 1700 3500 0    79   Italic 16
   Holder for\nCR2032 Battery
-Text Notes 950  7750 0    59   ~ 0
+Text Notes 600  7750 0    59   ~ 0
 * Available from EvilMadScientist - https://shop.evilmadscientist.com/productsmenu/partsmenu/189-candled
 $Comp
 L Device:R_US R2
@@ -2393,7 +2393,7 @@ U 1 1 615A9D08
 P 5750 2850
 F 0 "R2" H 5818 2896 50  0000 L CNN
 F 1 "47 Ohms" H 5818 2805 50  0000 L CNN
-F 2 "" V 5790 2840 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5790 2840 50  0001 C CNN
 F 3 "~" H 5750 2850 50  0001 C CNN
 	1    5750 2850
 	1    0    0    -1  
@@ -2404,7 +2404,7 @@ U 1 1 615A9D12
 P 5750 3400
 F 0 "D2" V 5789 3282 50  0000 R CNN
 F 1 "LED per Chart" V 5698 3282 50  0000 R CNN
-F 2 "" H 5750 3400 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 5750 3400 50  0001 C CNN
 F 3 "~" H 5750 3400 50  0001 C CNN
 	1    5750 3400
 	0    -1   -1   0   
@@ -2424,4 +2424,66 @@ Connection ~ 4900 2400
 NoConn ~ 4100 2600
 Text Notes 4150 2630 0    50   ~ 0
 n/c
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 6167C3E8
+P 5600 6900
+F 0 "#FLG0101" H 5600 6975 50  0001 C CNN
+F 1 "PWR_FLAG" H 5600 7073 50  0000 C CNN
+F 2 "" H 5600 6900 50  0001 C CNN
+F 3 "~" H 5600 6900 50  0001 C CNN
+	1    5600 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 6167D828
+P 6000 7050
+F 0 "#FLG0102" H 6000 7125 50  0001 C CNN
+F 1 "PWR_FLAG" H 6000 7223 50  0000 C CNN
+F 2 "" H 6000 7050 50  0001 C CNN
+F 3 "~" H 6000 7050 50  0001 C CNN
+	1    6000 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VDD #PWR0101
+U 1 1 6167DEAD
+P 6000 6900
+F 0 "#PWR0101" H 6000 6750 50  0001 C CNN
+F 1 "VDD" H 6015 7073 50  0000 C CNN
+F 2 "" H 6000 6900 50  0001 C CNN
+F 3 "" H 6000 6900 50  0001 C CNN
+	1    6000 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 6900 6000 7050
+$Comp
+L power:GND #PWR0102
+U 1 1 6167F120
+P 5600 7100
+F 0 "#PWR0102" H 5600 6850 50  0001 C CNN
+F 1 "GND" H 5605 6927 50  0000 C CNN
+F 2 "" H 5600 7100 50  0001 C CNN
+F 3 "" H 5600 7100 50  0001 C CNN
+	1    5600 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 6900 5600 7100
+$Comp
+L power:VDD #PWR0103
+U 1 1 616D4312
+P 2950 2350
+F 0 "#PWR0103" H 2950 2200 50  0001 C CNN
+F 1 "VDD" H 2965 2523 50  0000 C CNN
+F 2 "" H 2950 2350 50  0001 C CNN
+F 3 "" H 2950 2350 50  0001 C CNN
+	1    2950 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2350 2950 2500
+Connection ~ 2950 2500
 $EndSCHEMATC

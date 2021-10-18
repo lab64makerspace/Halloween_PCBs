@@ -1,0 +1,48 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,(5.1.9-0-10_14)*%
+%TF.CreationDate,2021-10-13T18:32:58-07:00*%
+%TF.ProjectId,pumpkin_pcb_2,70756d70-6b69-46e5-9f70-63625f322e6b,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Copper,L2,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW (5.1.9-0-10_14)) date 2021-10-13 18:32:58*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,ComponentPad*%
+%ADD10C,1.524000*%
+%TD*%
+%TA.AperFunction,ComponentPad*%
+%ADD11C,1.800000*%
+%TD*%
+%TA.AperFunction,ComponentPad*%
+%ADD12R,1.800000X1.800000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+%TO.P,SW1,*%
+%TO.N,*%
+X22169600Y-80519653D03*
+X28419600Y-80519653D03*
+%TD*%
+D11*
+%TO.P,D1,2*%
+%TO.N,Net-(D1-Pad2)*%
+X34507600Y-77400653D03*
+D12*
+%TO.P,D1,1*%
+%TO.N,GND*%
+X31967600Y-77400653D03*
+%TD*%
+D10*
+%TO.P,BAT1,3*%
+%TO.N,N/C*%
+X41750000Y-87630000D03*
+%TO.P,BAT1,2*%
+X36750000Y-84159999D03*
+%TO.P,BAT1,1*%
+X31750000Y-87630000D03*
+%TD*%
+M02*
