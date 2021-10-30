@@ -1,0 +1,33 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# CR2032-Device
+#
+DEF CR2032-Device BAT 0 40 Y Y 1 F N
+F0 "BAT" 100 200 60 H V C CNN
+F1 "CR2032-Device" 0 -250 60 H V C CNN
+F2 "" 200 200 60 H I L CNN
+F3 "" 200 300 60 H I L CNN
+F4 "2057-BH-125A-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "BH-125A-1" 200 500 60 H I L CNN "MPN"
+F6 "Battery Products" 200 600 60 H I L CNN "Category"
+F7 "Battery Holders, Clips, Contacts" 200 700 60 H I L CNN "Family"
+F8 "https://www.digikey.com/en/products/detail/adam-tech/BH-125A-1/13537720?s=N4IgTCBcDaIEIAkC0BGMBWAgqkBdAvkA" 200 900 60 H I L CNN "DK_Detail_Page"
+F9 "BATTERY HOLDER CR2032 PC PIN" 200 1000 60 H I L CNN "Description"
+F10 "ADAM TECH" 200 1100 60 H I L CNN "Manufacturer"
+F11 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+P 2 1 1 0 -110 220 -110 180 N
+P 2 1 1 0 -90 200 -130 200 N
+P 2 1 1 0 -75 135 -75 -155 N
+P 2 1 1 0 -25 50 -25 -50 N
+P 2 1 1 0 25 135 25 -155 N
+P 2 1 1 0 75 50 75 -50 N
+P 2 1 1 0 100 0 75 0 N
+X ~ POS -300 -100 224 R 50 50 0 0 W
+X ~ NEG 300 0 200 L 50 50 1 1 W
+X ~ POS -300 100 224 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+#End Library
